@@ -1,0 +1,33 @@
+<!-- FORMA -->
+            <div class="section">
+                <h2>✉️ Pošalji poruku</h2>
+                <form onsubmit="event.preventDefault(); alert('Hvala na poruci! Odgovorit ćemo ti u najkraćem roku.');">
+                    <div class="form-group">
+                        <label for="ime">Ime i prezime *</label>
+                        <input type="text" id="ime" name="ime" required placeholder="npr. Ana Anić">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail adresa *</label>
+                        <input type="email" id="email" name="email" required placeholder="tvoj@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tema">Tema</label>
+                        <select id="tema" name="tema">
+                            <option value="opcenito">Općenito pitanje</option>
+                            <option value="clanstvo">Učlanjenje</option>
+                            <option value="volontiranje">Volontiranje</option>
+                            <option value="projekti">Suradnja na projektima</option>
+                            <option value="donacije">Donacije i sponzorstva</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="poruka">Tvoja poruka *</label>
+                        <textarea id="poruka" name="poruka" required placeholder="Napiši svoju poruku..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Pošalji poruku →</button>
+                </form>
+            </div>
